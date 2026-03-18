@@ -21,6 +21,7 @@ const Index = () => {
       <FAQSection />
       <Footer />
       <WhatsAppButton />
+      <ChatBot />
     </div>
   );
 };
