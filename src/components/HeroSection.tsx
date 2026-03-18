@@ -17,7 +17,7 @@ const AnimatedCounter = ({ value, suffix, delay }: { value: number; suffix: stri
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting && !started) setStarted(true); },
-      { threshold: 0.5 }
+      { threshold: 0, rootMargin: "0px 0px -10px 0px" }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
