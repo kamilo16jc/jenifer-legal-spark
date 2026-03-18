@@ -51,6 +51,7 @@ const Navbar = () => {
           >
             Consulta Gratis
           </a>
+          <ThemeToggle />
         </nav>
 
         {/* Mobile toggle */}
