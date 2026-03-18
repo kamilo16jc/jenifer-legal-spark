@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -27,6 +27,18 @@ const testimonials = [
     text: "Carlos me defendió de manera brillante. Su conocimiento del derecho penal es impresionante y su estrategia fue clave para obtener un resultado favorable.",
     rating: 5,
   },
+  {
+    name: "Andrea López",
+    role: "Emprendedora Digital",
+    text: "Necesitaba asesoría para constituir mi empresa y proteger mi marca. El equipo de Wilches Legal hizo todo el proceso simple y rápido. Excelente servicio.",
+    rating: 5,
+  },
+  {
+    name: "Fernando Ruiz",
+    role: "Comerciante",
+    text: "Tuve un problema contractual serio y Andrés lo resolvió con una eficiencia increíble. Su conocimiento del derecho comercial es de primer nivel.",
+    rating: 5,
+  },
 ];
 
 const TestimonialsSection = () => {
@@ -34,11 +46,19 @@ const TestimonialsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+  // Auto-advance every 5 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((c) => (c + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   const next = () => setCurrent((c) => (c + 1) % testimonials.length);
   const prev = () => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-24 md:py-32 bg-muted/30">
       <div className="container mx-auto px-6">
         <motion.div
           ref={ref}
