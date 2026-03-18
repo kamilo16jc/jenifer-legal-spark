@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         <div>
           <div className="mb-4">
-            <img src={logoJW} alt="Wilches Legal" className="h-16 w-auto brightness-0 invert" />
+            <img src={logoJW} alt="Wilches Legal" className="h-24 w-auto brightness-0 invert" />
           </div>
           <p className="font-body text-sm text-primary-foreground/60 leading-relaxed">
             Excelencia jurídica con visión moderna. Tu confianza, nuestra misión.
