@@ -6,7 +6,7 @@ const faqData = [
   { keywords: ["costo", "precio", "cuánto", "cuanto", "cobran", "tarifa", "gratis"], answer: "La primera consulta es completamente gratuita y sin compromiso. Los honorarios posteriores dependen del tipo de caso y se acuerdan de manera transparente antes de iniciar." },
   { keywords: ["horario", "hora", "atienden", "abierto", "disponible"], answer: "Atendemos de Lunes a Viernes de 8:00 AM a 6:00 PM y Sábados de 9:00 AM a 1:00 PM." },
   { keywords: ["dirección", "direccion", "ubicación", "ubicacion", "donde", "oficina", "dónde"], answer: "Nuestra oficina principal está en Calle 93 #12-45, Oficina 801, Bogotá, Colombia." },
-  { keywords: ["teléfono", "telefono", "llamar", "celular", "número", "numero", "contacto"], answer: "Puedes contactarnos al +57 (1) 234 5678 o al +57 310 987 6543. También puedes escribirnos por WhatsApp." },
+  { keywords: ["teléfono", "telefono", "llamar", "celular", "número", "numero", "contacto", "whatsapp"], answer: "Puedes contactarnos al +57 (302) 630-4951. También puedes escribirnos directamente por WhatsApp al mismo número." },
   { keywords: ["email", "correo", "mail"], answer: "Nuestro correo electrónico es contacto@wilcheslegal.com" },
   { keywords: ["servicio", "área", "area", "especialidad", "practican", "hacen", "ofrecen"], answer: "Manejamos Derecho Civil, Derecho de Familia, Derecho Comercial, Derecho Laboral, Derecho Penal y Propiedad Intelectual." },
   { keywords: ["consulta", "cita", "agendar", "reservar"], answer: "Puedes agendar tu consulta gratuita a través de nuestro formulario de contacto en la web, por WhatsApp o llamándonos directamente." },
