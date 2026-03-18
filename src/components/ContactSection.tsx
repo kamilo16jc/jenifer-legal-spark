@@ -143,7 +143,7 @@ const ContactSection = () => {
         >
           <iframe
             title="Ubicación Wilches Legal"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6!2d-74.05!3d4.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNDAnNDguMCJOIDc0wrAwMycwMC4wIlc!5e0!3m2!1ses!2sco!4v1700000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.!2d-75.5703!3d6.2476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a5cf34ce53%3A0x2b0e7e6b8e5a8b0!2sWilches+Legal!5e0!3m2!1ses!2sco!4v1700000000000&q=6.2476,-75.5703"
             width="100%"
             height="350"
             style={{ border: 0 }}
