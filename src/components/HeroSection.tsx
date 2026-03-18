@@ -120,7 +120,7 @@ const HeroSection = () => {
           </motion.div>
 
           {/* Title with staggered word animation */}
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-primary leading-tight mb-6">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight mb-6">
             {"Excelencia Jurídica".split(" ").map((word, i) => (
               <motion.span
                 key={i}
