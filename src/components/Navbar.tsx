@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-3">
-          <img src={logoJW} alt="Wilches Legal" className="h-20 w-auto" />
+          <img src={logoJW} alt="Wilches Legal" className="h-28 w-auto" />
         </a>
 
         {/* Desktop nav */}
