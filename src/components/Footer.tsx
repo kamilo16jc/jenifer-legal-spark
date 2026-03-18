@@ -5,9 +5,8 @@ const Footer = () => (
     <div className="container mx-auto px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         <div>
-          <div className="flex items-center gap-3 mb-4">
-            <img src={logoJW} alt="Wilches Legal" className="h-8 w-8 brightness-0 invert" />
-            <span className="font-display text-lg font-semibold text-primary-foreground">Wilches Legal</span>
+          <div className="mb-4">
+            <img src={logoJW} alt="Wilches Legal" className="h-16 w-auto brightness-0 invert" />
           </div>
           <p className="font-body text-sm text-primary-foreground/60 leading-relaxed">
             Excelencia jurídica con visión moderna. Tu confianza, nuestra misión.
