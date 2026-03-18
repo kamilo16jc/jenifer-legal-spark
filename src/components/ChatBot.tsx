@@ -16,7 +16,7 @@ const faqData = [
   { keywords: ["hola", "buenos días", "buenas tardes", "buenas noches", "hey", "saludos"], answer: "¡Hola! 👋 Soy el asistente virtual de Wilches Legal. ¿En qué puedo ayudarte? Puedes preguntarme sobre horarios, servicios, ubicación o cómo agendar una consulta." },
 ];
 
-const defaultAnswer = "No tengo una respuesta exacta para eso, pero te invito a contactarnos directamente al +57 310 987 6543 o por nuestro formulario de contacto para una atención personalizada. 😊";
+const defaultAnswer = "No tengo una respuesta exacta para eso, pero te invito a contactarnos directamente al +57 (302) 630-4951 o por nuestro formulario de contacto para una atención personalizada. 😊";
 
 type Message = { role: "bot" | "user"; text: string };
 

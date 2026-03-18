@@ -56,8 +56,8 @@ const ContactSection = () => {
                 <Phone className="w-5 h-5 text-accent-foreground" />
               </div>
               <div>
-                <h4 className="font-display text-sm font-semibold text-primary mb-1">Teléfono</h4>
-                <p className="font-body text-sm text-muted-foreground">+57 (1) 234 5678<br />+57 310 987 6543</p>
+                <h4 className="font-display text-sm font-semibold text-primary mb-1">Teléfono / WhatsApp</h4>
+                <p className="font-body text-sm text-muted-foreground">+57 (302) 630-4951</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
