@@ -102,26 +102,68 @@ const HeroSection = () => {
 
       <motion.div style={{ y: textY, opacity }} className="container mx-auto px-6 relative z-20">
         <div className="max-w-xl">
+          {/* Animated label with typewriter-style reveal */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <span className="inline-block font-body text-sm font-semibold uppercase tracking-[0.3em] text-secondary mb-6">
+            <span className="inline-flex items-center gap-3 font-body text-sm font-semibold uppercase tracking-[0.3em] text-secondary mb-6">
+              <motion.span
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="inline-block w-8 h-px bg-secondary origin-left"
+              />
               Bufete de Abogados
             </span>
           </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-display text-5xl md:text-7xl font-bold text-primary leading-tight mb-6"
-          >
-            Excelencia Jurídica
+          {/* Title with staggered word animation */}
+          <h1 className="font-display text-5xl md:text-7xl font-bold text-primary leading-tight mb-6">
+            {"Excelencia Jurídica".split(" ").map((word, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, y: 50, rotateX: -40 }}
+                animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.5 + i * 0.15,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+                className="inline-block mr-[0.3em]"
+                style={{ perspective: 600 }}
+              >
+                {word}
+              </motion.span>
+            ))}
             <br />
-            <span className="gold-text">con Visión Moderna</span>
-          </motion.h1>
+            <span className="gold-text">
+              {"con Visión Moderna".split(" ").map((word, i) => (
+                <motion.span
+                  key={i}
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.8 + i * 0.15,
+                    ease: [0.25, 0.46, 0.45, 0.94],
+                  }}
+                  className="inline-block mr-[0.3em]"
+                >
+                  {word}
+                </motion.span>
+              ))}
+            </span>
+          </h1>
+
+          {/* Animated decorative line under title */}
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 1, delay: 1.3, ease: "easeOut" }}
+            className="w-24 h-0.5 gold-gradient origin-left mb-6"
+          />
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
